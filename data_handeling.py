@@ -105,6 +105,9 @@ def load_mnist(normalize=True, flatten=True, one_hot_label=False):
     -------
     (Trainig Image, Training Label), (Test Image, Test Label)
     """
+    global save_file, dataset_dir
+    if not os.path.exists(dataset_dir):
+        os.makedirs(dataset_dir)
     if not os.path.exists(save_file):
         init_mnist()
 
