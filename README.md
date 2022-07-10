@@ -89,5 +89,23 @@ respect to the networks parameters (weights and biases):<br/>
 
 ![image](https://user-images.githubusercontent.com/108329249/178142645-88f949ca-75fd-4f83-89b2-a3a07525c369.png)
 
+#### Update
+Now that we have calculated the derivatives, we can update the weights so that they minimize the error with the gradient descent algorithm:  
+
+![image](https://user-images.githubusercontent.com/108329249/178142699-bd8a59e9-d638-44d2-adc4-569681625206.png)
+
+
+Where μ is the learning rate.<br/>
+Similarly for the bias:  
+
+![image](https://user-images.githubusercontent.com/108329249/178142755-c01910f0-5de0-4da8-8320-69a41063c848.png)
+
+
+This process is done for each 'minibatch' of the training data and the process is done
+iteratively until the network converges.
+
+### Results
+#### Test Accuracy 97%
+![image](https://user-images.githubusercontent.com/108329249/178142846-e0cbe8aa-065d-4601-8a2b-319922af1f7b.png)
 
 
